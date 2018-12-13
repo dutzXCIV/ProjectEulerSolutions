@@ -15,14 +15,14 @@ def Multiples(upper_limit):
 	
 	while(index_three < upper_limit):
 		lst[index_three] = True
-		index_three = index_three + 3
+		index_three += 3
 	while(index_five < upper_limit):
 		lst[index_five] = True
 		index_five += 5
 	
 	for y in range(upper_limit):
 	    if(lst[y] == True):
-		    sum = sum+(y+1)
+		    sum += y+1
 	
 	return(sum)
 	
